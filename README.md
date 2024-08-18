@@ -2,10 +2,9 @@
  ##                                                       **EAsyViGAAP (Easy Viral Genome Assembly and Annotation Processing)**            
                      
 
-This easy-to-use linux-based pipeline automates the process of genome assembly and annotation, specifically for viral genomes.
-It integrates various bioinformatics tools and scripts to perform quality control, adapter trimming, 
-assembly, and annotation. The pipeline is designed to run in a specific Conda environment. 
-
+This easy-to-use, Linux-based pipeline automates the process of genome assembly and annotation, specifically for viral genomes. 
+It integrates various bioinformatics tools and scripts to perform quality control, adapter trimming, assembly, and annotation. 
+The pipeline is designed to run within a specific Conda environment.
 
 ## Installation:
 
@@ -28,7 +27,7 @@ cd EAsyViGAAP
 ### conda 24.7.1 was used to install the pipeline dependencies.
 
 ## Requirements:
-The pipeline was optimized with the following bioinformatics tools and versions; however, it should work with later released versions.
+The pipeline was optimized using the following bioinformatics tools and their respective versions. However, it should be compatible with later versions of these tools.
 ~~~
 FastQC==0.12.1
 samtools==1.20
@@ -50,15 +49,15 @@ pip install -r INSTALL.txt            # install dependencies. Be sure you have p
 ~~~
 
 ### The EAsyViGAAP directory include several python and Shell scripts as well as two fasta files for reference genome:
-reference.fa                          # these two files for SARS-CoV-2 reference genome, so if you wish to include different viral reference genome you need to replace these files by the 
-referance.fasta                       # corresponding viral reference genome.
+reference.fa                          # These files are for the SARS-CoV-2 reference genome. If you wish to use a different viral reference genome,  
+referance.fasta                       # you will need to replace these files with the corresponding reference genome files for your selected virus.
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.
 
 ## USAGE:
 ### To run the entire pipeline, use the following command:
 ~~~
-python main.py                        # if you wish to run multiple input files, you should think to use HPC.
+python main.py                        # If you plan to run analyses on multiple input files, consider using a High-Performance Computing (HPC) environment to efficiently handle the computational demands.
 ~~~
 
 ### Alternatively, you can run each step of the pipeline individually.

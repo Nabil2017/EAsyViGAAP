@@ -1,6 +1,4 @@
-#*********************************************************EAsyViGAAP*****************************************#
-#************************************************************************************************************#
-                        #**********************************************************************#
+#*********************************************************EAsyViGAAP*****************************************
 
 This easy-to-use linux-based pipeline automates the process of genome assembly and annotation, specifically for viral genomes.
 It integrates various bioinformatics tools and scripts to perform quality control, adapter trimming, 

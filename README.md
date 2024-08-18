@@ -22,7 +22,21 @@ conda --version
 ## Clone the Repository:
 ~~~
 git clone https://github.com/Nabil2017/EAsyViGAAP.git
-cd EAsyViGAAP
+cd EAsyViGAAP/
+~~~
+## EAsyViGAAP content and Specific considerations:
+~~~
+FastQC_analysis.py                    # Quality Control script to evaluate the input fastq files.
+process_fasta.py                      # To generate quality plots.
+Quality_per_read.py                   # Plot analysis of the quality score per reads, useful to choose the parameters to filter the reads (we choose the optimal length of 100 and quality score of 60 for the test input files).
+multi_png.py                          # combine all plots in a unique HTML file.
+Trim_Adapters.py                      # to clean adapters from reads. it requires a list of adapters used in your exeriment and saved in a text file in the RAW_DATA folder.
+Pipeline_virus_assembly.py            # for the assembly of the viral genome using the above parameters. We used optimal read length 100 and quality score of 60 . You should change these values in the script as you see suitable for your 
+                                      # analysis. 
+samtools.sh                           # SHELL script. If you wish to change the optimal read lenght, you need to change 100 by the suitable value.
+samtools_mpileup.sh                   # you should change the two values 100 and 60 as you like.
+reference.fa                          # These files are for the SARS-CoV-2 reference genome. If you wish to use a different viral reference genome,  
+referance.fasta                       # you will need to replace these files with the corresponding reference genome files for your selected virus.
 ~~~
 ### conda 24.7.1 was used to install the pipeline dependencies.
 
@@ -47,10 +61,6 @@ conda create --name genomics-env      # create genomics-env
 conda activate genomics-env           # activate genomics-env
 pip install -r INSTALL.txt            # install dependencies. Be sure you have pip installed, otherwise: conda install pip
 ~~~
-
-### The EAsyViGAAP directory include several python and Shell scripts as well as two fasta files for reference genome:
-reference.fa                          # These files are for the SARS-CoV-2 reference genome. If you wish to use a different viral reference genome,  
-referance.fasta                       # you will need to replace these files with the corresponding reference genome files for your selected virus.
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.
 

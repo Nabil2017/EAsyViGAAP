@@ -1,4 +1,6 @@
-           ********************************************#EAsyViGAAP*****************************************
+
+ ##                                                       **EAsyViGAAP**            
+                     
 
 This easy-to-use linux-based pipeline automates the process of genome assembly and annotation, specifically for viral genomes.
 It integrates various bioinformatics tools and scripts to perform quality control, adapter trimming, 
@@ -10,12 +12,12 @@ assembly, and annotation. The pipeline is designed to run in a specific Conda en
 Prerequisites:
 Conda: Make sure you have Conda installed on your system. If not, you can install it by following the instructions available in Anaconda website.
 
-wget https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh
+~~~wget https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh~~~
 chmod +x Anaconda3-latest-Linux-x86_64.sh
 ./Anaconda3-latest-Linux-x86_64.sh
 conda init
 source ~/.bashrc
-conda --version   # to get your conda version
+conda --version   
 
 ## conda 24.7.1 was used to install the pipeline dependencies.
 

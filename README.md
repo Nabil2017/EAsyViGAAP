@@ -91,8 +91,10 @@ bwa 2>&1 | grep "Version"
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.
 The test fastq files can be downloaded from these links:
-[Download file1_R1.fastq](https://drive.google.com/file/d/1xpDPBVo6SN4QeTghRM0lG4i6xR0_ScSw/view?usp=sharing))
+~~~
+[Download file1_R1.fastq](https://drive.google.com/file/d/1xpDPBVo6SN4QeTghRM0lG4i6xR0_ScSw/view?usp=sharing)
 [Download file1_R2.fastq ](https://example.com/path-to-your-files)
+~~~
 
 ## USAGE:
 ### To run the entire pipeline, use the following command:

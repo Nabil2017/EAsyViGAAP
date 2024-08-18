@@ -19,8 +19,12 @@ chmod +x Anaconda3-latest-Linux-x86_64.sh
 conda init
 source ~/.bashrc
 conda --version
-~~~ 
-
+~~~
+## Clone the Repository:
+~~~
+git clone https://github.com/Nabil2017/EAsyViGAAP.git
+cd EAsyViGAAP
+~~~
 ### conda 24.7.1 was used to install the pipeline dependencies.
 
 ## Requirements:

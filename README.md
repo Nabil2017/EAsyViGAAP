@@ -30,18 +30,19 @@ conda --version
 
 ## EAsyViGAAP content and Specific considerations:
 ~~~
-main.py                               # full run.
-FastQC_analysis.py                    # Quality Control script to evaluate the input fastq files.
+main.py                               # Full run session.
+FastQC_analysis.py                    # To evaluate the quality of the input fastq files.
 process_fasta.py                      # To generate quality plots.
-Quality_per_read.py                   # Plot analysis of the quality score per reads, useful to choose the parameters to filter the reads (we choose the optimal length of 100 and quality score of 60 for the test input files).
-multi_png.py                          # combine all plots in a unique HTML file.
-Trim_Adapters.py                      # to clean adapters from reads. it requires a list of adapters used in your exeriment and saved in a text file in the RAW_DATA folder.
-Pipeline_virus_assembly.py            # for the assembly of the viral genome using the above parameters. We used optimal read length 100 and quality score of 60 . You should change these values in the script as you see suitable for your 
-                                      # analysis. 
-samtools.sh                           # SHELL script. If you wish to change the optimal read lenght, you need to change 100 by the suitable value.
-samtools_mpileup.sh                   # you should change the two values 100 and 60 as you like.
-reference.fa                          # These files are for the SARS-CoV-2 reference genome. If you wish to use a different viral reference genome,  
-referance.fasta                       # you will need to replace these files with the corresponding reference genome files for your selected virus.
+Quality_per_read.py                   # To generate plots of the quality score per reads, useful to choose the parameters to filter the reads (we choose the optimal length of 100 and quality score of 60 for the test input files).
+multi_png.py                          # Combine all plots in one unique HTML file.
+Trim_Adapters.py                      # To remove adapters from reads, you need a list of adapters used in your experiment saved in a text file in the RAW_DATA folder.
+Pipeline_virus_assembly.py            # For the assembly of the viral genome using the parameters mentioned above, we used an optimal read length of 100 and a quality score of 60. You should adjust these values in the script as needed for 
+                                      # your analysis. 
+samtools.sh                           # SHELL script. If you wish to change the optimal read length, you need to replace the value 100 with the appropriate value.
+samtools_mpileup.sh                   # You should change both values, 100 and 60, to your preferred settings.
+reference.fa                          # These files are specific to the SARS-CoV-2 reference genome. If you wish to use a different viral reference genome, you will need to replace these files
+referance.fasta                       # with the corresponding reference genome files.
+RAW_DATA                              # Folder contains the input fastq files and Adapter_List.txt file (more details in  
 ~~~
 
 ## Requirements:

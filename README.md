@@ -23,6 +23,7 @@ cd EAsyViGAAP/
 wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
 chmod +x Anaconda3-2024.06-1-Linux-x86_64.sh
 ./Anaconda3-2024.06-1-Linux-x86_64.sh
+# scroll down to read Licence and accept it.
 conda init
 source ~/.bashrc
 conda --version
@@ -32,7 +33,6 @@ conda --version
 ~~~
 main.py                               # Full run session.
 FastQC_analysis.py                    # To evaluate the quality of the input fastq files.
-process_fasta.py                      # To generate quality plots.
 Quality_per_read.py                   # To generate plots of the quality score per reads, useful to choose the parameters to filter the reads (we choose the optimal length of 100 and quality score of 60 for the test input files).
 multi_png.py                          # Combine all plots in one unique HTML file.
 Trim_Adapters.py                      # To remove adapters from reads, you need a list of adapters used in your experiment saved in a text file in the RAW_DATA folder.
@@ -40,9 +40,10 @@ Pipeline_virus_assembly.py            # For the assembly of the viral genome usi
                                       # your analysis. 
 samtools.sh                           # SHELL script. If you wish to change the optimal read length, you need to replace the value 100 with the appropriate value.
 samtools_mpileup.sh                   # You should change both values, 100 and 60, to your preferred settings.
+process_fasta.py                      # To generate processed assembly fasta file.
 reference.fa                          # These files are specific to the SARS-CoV-2 reference genome. If you wish to use a different viral reference genome, you will need to replace these files
 referance.fasta                       # with the corresponding reference genome files.
-RAW_DATA                              # Folder contains the input fastq files and Adapter_List.txt file (more details in  
+RAW_DATA                              # Folder contains the input fastq files and Adapter_List.txt file (more details in Tutorial file in RAW_DATA).  
 ~~~
 
 ## Requirements:
@@ -59,15 +60,18 @@ biopython==1.84
 matplotlib==3.9.1
 python==3.11
 ~~~
-### To install these dependencies, open a terminal and navigate to the EAsyViGAAP directory:
+### To install these dependencies:
 ~~~
-conda create --name genomics-env      # create genomics-env
-conda activate genomics-env           # activate genomics-env
-pip install -r INSTALL.txt            # install dependencies. Be sure you have pip installed, otherwise: conda install pip
-conda install -c bioconda bwa=0.7.18  # install BWA separately.
+conda create --name EAsyViGAAP-env      # create genomics-env
+conda activate EAsyViGAAP-env           # activate genomics-env
+pip install -r INSTALL.txt              # install dependencies. Be sure you have pip installed, otherwise: conda install pip
+conda install -c bioconda bwa=0.7.18    # install BWA separately.
 ~~~
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.
+The test fastq files can be downloaded from these links:
+file1_R1.fatsq [Download FASTQ files](https://example.com/path-to-your-files)
+file1_R2.fastq [Download FASTQ files](https://example.com/path-to-your-files)
 
 ## USAGE:
 ### To run the entire pipeline, use the following command:

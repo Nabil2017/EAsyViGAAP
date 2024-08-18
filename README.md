@@ -17,7 +17,7 @@ conda init
 source ~/.bashrc
 conda --version   # to get your conda version
 
-# conda 24.7.1 was used to install the pipeline dependencies.
+## conda 24.7.1 was used to install the pipeline dependencies.
 
 # Requirements:
 The pipeline was optimized with the following bioinformatics tools and versions; however, it should work with later released versions.

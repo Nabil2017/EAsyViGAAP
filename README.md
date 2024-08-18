@@ -55,17 +55,25 @@ trimmomatic==0.39
 quast==5.2.0
 prokka==1.14.6
 bcftools==1.20
-freebayes==1.0.0
 biopython==1.84
 matplotlib==3.9.1
-python==3.11
+bwa==0.7.18
 ~~~
 ### To install these dependencies:
 ~~~
 conda create --name EAsyViGAAP-env      # create genomics-env
 conda activate EAsyViGAAP-env           # activate genomics-env
-pip install -r INSTALL.txt              # install dependencies. Be sure you have pip installed, otherwise: conda install pip
-conda install -c bioconda bwa=0.7.18    # install BWA separately.
+conda install python==3.11              
+conda install FastQC==0.12.1
+conda install samtools==1.20
+conda install trimmomatic==0.39
+conda install quast==5.2.0
+conda install prokka==1.14.6
+conda install bcftools==1.20
+conda install freebayes==1.0.0
+conda install biopython==1.84
+conda install matplotlib==3.9.1
+conda install -c bioconda bwa==0.7.18    
 ~~~
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.

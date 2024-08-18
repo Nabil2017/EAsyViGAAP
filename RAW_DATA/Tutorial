@@ -1,1 +1,18 @@
+********************************************************************************************************
+************************************Input fastq files***************************************************
 
+# You need to upload your paire fastq files (R1 and R2) and save them in this folder.
+# Your fastq files should be named as: file1_R1.fastq and file1_R2.fastq 
+# You can upload as many files as you wish for multi run process using files:
+file1_R1.fastq and file1_R2.fastq
+file2_R1.fastq and file2_R2.fastq
+.
+.
+.
+.
+file*_R1.fastq and file*_R2.fastq
+
+********************************************************************************************************
+****************************************Adapters list***************************************************
+
+# You need to provide adapter sequences depending on your experiment, as described in the example Adapter_List.txt file.

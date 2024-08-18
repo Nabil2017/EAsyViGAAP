@@ -14,7 +14,6 @@ wget https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh
 chmod +x Anaconda3-latest-Linux-x86_64.sh
 ./Anaconda3-latest-Linux-x86_64.sh
 conda init
-# Close and reopen your terminal, or source your .bashrc file to apply the changes:
 source ~/.bashrc
 conda --version   # to get your conda version
 

@@ -56,7 +56,6 @@ biopython==1.84
 matplotlib==3.9.1
 bwa==0.7.18
 cutadapt==4.9
-tqdm==4.66.1
 ~~~
 
 ### To install these dependencies:
@@ -75,7 +74,6 @@ conda install biopython==1.84
 conda install matplotlib==3.9.1
 conda install bwa==0.7.18
 conda install cutadapt==4.9
-conda install tqdm==4.66.1   
 ~~~
 
 ### Install verifiation

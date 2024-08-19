@@ -56,6 +56,7 @@ biopython==1.84
 matplotlib==3.9.1
 bwa==0.7.18
 cutadapt==4.9
+tqdm==4.66.1
 ~~~
 
 ### To install these dependencies:
@@ -73,7 +74,8 @@ conda install freebayes==1.0.0
 conda install biopython==1.84
 conda install matplotlib==3.9.1
 conda install bwa==0.7.18
-conda install cutadapt==4.9    
+conda install cutadapt==4.9
+conda install tqdm==4.66.1   
 ~~~
 
 ### Install verifiation
@@ -90,6 +92,7 @@ python -c "import Bio; print(Bio.__version__)"                     # for biopyth
 python -c "import matplotlib; print(matplotlib.__version__)"       # for Matplotlib version
 bwa 2>&1 | grep "Version"                                          # for bwa version
 cutadapt --version
+tqdm --version
 ~~~
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.

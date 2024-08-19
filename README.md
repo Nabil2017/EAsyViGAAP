@@ -27,7 +27,7 @@ conda --version
 
 ### EAsyViGAAP content and Specific considerations:
 ~~~
-main.py                               # Full run session.
+main.py                               # Full run session. You need to change the file prefix with you virus name.
 FastQC_analysis.py                    # To evaluate the quality of the input fastq files.
 Quality_per_read.py                   # To generate plots of the quality score per reads, useful to choose the parameters to filter the reads (we choose the optimal length of 100 and quality score of 60 for the test input files).
 multi_png.py                          # Combine all plots in one unique HTML file.

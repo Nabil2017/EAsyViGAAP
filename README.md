@@ -60,8 +60,8 @@ cutadapt==4.9
 
 ### To install these dependencies:
 ~~~
-conda create --name EAsyViGAAP-env      # create genomics-env
-conda activate EAsyViGAAP-env           # activate genomics-env
+conda create --name EAsyViGAAP-env      # create EAsyViGAAP-env
+conda activate EAsyViGAAP-env           # activate EAsyViGAAP-env
 conda install python==3.11                    
 conda install FastQC==0.12.1
 conda install samtools==1.20

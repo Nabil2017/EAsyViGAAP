@@ -93,6 +93,7 @@ cutadapt --version
 ~~~
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.
+These sequences were generated using the MiSeq platform at the Laboratory of Molecular and Cellular Screening Processes, Centre of Biotechnology of Sfax, University of Sfax, as part of the ADAGE (Decision System Based on Genome Analyses in COVID-19 Tunisian Patients) project.
 The test fastq files can be downloaded from these links:
 ~~~
 [Download file1_R1.fastq ](https://drive.google.com/file/d/1xpDPBVo6SN4QeTghRM0lG4i6xR0_ScSw/view?usp=sharing)

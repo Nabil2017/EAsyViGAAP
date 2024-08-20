@@ -90,7 +90,6 @@ python -c "import Bio; print(Bio.__version__)"                     # for biopyth
 python -c "import matplotlib; print(matplotlib.__version__)"       # for Matplotlib version
 bwa 2>&1 | grep "Version"                                          # for bwa version
 cutadapt --version
-tqdm --version
 ~~~
 
 ### RAW_DATA folder contains the fastq input files as well as the adapter sequences to be trimmed.

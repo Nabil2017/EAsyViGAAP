@@ -5,6 +5,9 @@
 This easy-to-use, Linux-based pipeline automates the process of genome assembly and annotation, specifically for viral genomes. 
 It integrates various bioinformatics tools and scripts to perform quality control, adapter trimming, assembly, and annotation. 
 The pipeline is designed to run within a specific Conda environment.
+This workflow is dedicated to researchers who wish to carry out the analysis of short paired-end reads for the assembly and annotation 
+of complete viral genomes. It is especially helpful for beginners in the field of bioinformatics who want to explore data analysis 
+but find some tasks challenging.
 
 ### Clone the Repository:
 ~~~

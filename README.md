@@ -21,8 +21,7 @@ Make sure you have Conda installed on your system. If not, you can install it by
 
 ~~~
 wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
-chmod +x Anaconda3-2024.06-1-Linux-x86_64.sh
-./Anaconda3-2024.06-1-Linux-x86_64.sh
+bash Anaconda3-2024.06-1-Linux-x86_64.sh -b
 conda init
 source ~/.bashrc
 conda --version
@@ -48,35 +47,25 @@ RAW_DATA                              # Folder contains the input fastq files an
 ## Installation:
 ### Requirements:
 The pipeline was optimized using the following bioinformatics tools and their respective versions. However, it should be compatible with later versions of these tools.
-~~~
-FastQC==0.12.1
-samtools==1.20
-trimmomatic==0.39
-quast==5.2.0
-prokka==1.14.6
-bcftools==1.20
-biopython==1.84
-matplotlib==3.9.1
-bwa==0.7.18
-cutadapt==4.9
-~~~
+
+![pyhton version](https://img.shields.io/badge/python-v3.11.9%20-blue)
+![Fastqc version](https://img.shields.io/badge/Fastqc-v0.12.1%20-blue)
+![Samtools version](https://img.shields.io/badge/Samtools-v1.20%20-blue)
+![Trimmomatic version](https://img.shields.io/badge/Trimmomatic-v0.39%20-blue)
+![Quast version](https://img.shields.io/badge/Quast-v5.2.0%20-blue)
+![Prokka version](https://img.shields.io/badge/Prokka-v1.14.6%20-blue)
+
+![bcftools version](https://img.shields.io/badge/bcftools-v1.20%20-blue)
+![Freebayes version](https://img.shields.io/badge/Freebayes-v1.3.8%20-blue)
+![Biopython version](https://img.shields.io/badge/Biopython-v1.84%20-blue)
+![Matplotlib version](https://img.shields.io/badge/Matplotlib-v3.9.1%20-blue)
+![Bwa version](https://img.shields.io/badge/Bwa-v0.7.18%20-blue)
+![Cutadapt version](https://img.shields.io/badge/Cutadapt-v4.9%20-blue)
+ 
 
 ### To install these dependencies:
 ~~~
-conda create --name EAsyViGAAP-env      # create EAsyViGAAP-env
-conda activate EAsyViGAAP-env           # activate EAsyViGAAP-env
-conda install python==3.11                    
-conda install FastQC==0.12.1
-conda install samtools==1.20
-conda install trimmomatic==0.39
-conda install quast==5.2.0
-conda install prokka==1.14.6
-conda install bcftools==1.20
-conda install freebayes==1.0.0
-conda install biopython==1.84
-conda install matplotlib==3.9.1
-conda install bwa==0.7.18
-conda install cutadapt==4.9
+conda env create -f EAsyViGAAP-env.yml  
 ~~~
 
 ### Install verifiation

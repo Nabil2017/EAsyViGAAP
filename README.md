@@ -55,6 +55,7 @@ trimmomatic==0.39
 quast==5.2.0
 prokka==1.14.6
 bcftools==1.20
+freebayes==1.0.0
 biopython==1.84
 matplotlib==3.9.1
 bwa==0.7.18

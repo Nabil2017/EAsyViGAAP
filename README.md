@@ -65,18 +65,18 @@ cutadapt==4.9
 ~~~
 conda create --name EAsyViGAAP-env      # create EAsyViGAAP-env
 conda activate EAsyViGAAP-env           # activate EAsyViGAAP-env
-conda install python==3.11                    
-conda install FastQC==0.12.1
-conda install samtools==1.20
-conda install trimmomatic==0.39
-conda install quast==5.2.0
-conda install prokka==1.14.6
-conda install bcftools==1.20
-conda install freebayes==1.0.0
-conda install biopython==1.84
-conda install matplotlib==3.9.1
-conda install bwa==0.7.18
-conda install cutadapt==4.9
+conda install -c bioconda -c conda-forge python==3.11                    
+conda install -c bioconda -c conda-forge FastQC==0.12.1
+conda install -c bioconda -c conda-forge samtools==1.20
+conda install -c bioconda -c conda-forge trimmomatic==0.39
+conda install -c bioconda -c conda-forge quast==5.2.0
+conda install -c bioconda -c conda-forge prokka==1.14.6
+conda install -c bioconda -c conda-forge bcftools==1.20
+conda install -c bioconda -c conda-forge freebayes==1.0.0
+conda install -c bioconda -c conda-forge biopython==1.84
+conda install -c bioconda -c conda-forge matplotlib==3.9.1
+conda install -c bioconda -c conda-forge bwa==0.7.18
+conda install -c bioconda -c conda-forge cutadapt==4.9
 ~~~
 
 ### Install verifiation

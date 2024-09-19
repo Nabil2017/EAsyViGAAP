@@ -1,6 +1,5 @@
 
  ##                                                       **EAsyViGAAP (Easy Viral Genome Assembly and Annotation Processing)**            
-                     ![image](https://github.com/user-attachments/assets/72ef5f9d-65e0-4672-b00c-56a6e156b878)
 
 
 This easy-to-use, Linux-based pipeline automates the process of genome assembly and annotation, specifically for viral genomes. 
